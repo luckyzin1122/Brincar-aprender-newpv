@@ -17,6 +17,7 @@ import {
   BookCopy,
   ClipboardList,
   Clapperboard,
+  Hand,
 } from 'lucide-react';
 import { RabbitIcon } from './icons';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -112,8 +113,8 @@ const bonuses = [
     fit: 'contain',
   },
   {
-    icon: <Clapperboard className="h-8 w-8" />,
-    title: 'Vídeos de Histórias Infantis',
+    icon: <Hand className="h-8 w-8" />,
+    title: 'Histórias na Luva',
     value: 27,
     imageIds: ['bonus-videos-1', 'bonus-videos-2', 'bonus-videos-3'],
   },
@@ -183,6 +184,10 @@ const BonusCarousel = ({
                         'object-cover': fit === 'cover',
                         'object-contain': fit === 'contain',
                       })}
+                      style={{
+                        aspectRatio: '1 / 1',
+                        objectFit: fit,
+                      }}
                     />
                   </div>
                 </CarouselItem>
