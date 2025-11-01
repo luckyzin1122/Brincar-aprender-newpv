@@ -49,7 +49,10 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
           </AlertDialogAction>
           <AlertDialogCancel asChild>
             <a href="https://pay.wiapy.com/sNgluDAio">
-              <Button variant="link" className="text-muted-foreground h-auto">
+              <Button
+                variant="link"
+                className="text-muted-foreground h-auto text-center"
+              >
                 Não, obrigado. Quero apenas o Básico por R$ 5.
               </Button>
             </a>
