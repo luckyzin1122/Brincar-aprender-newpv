@@ -49,27 +49,7 @@ export function FinalCtaSection() {
           </div>
         </div>
         
-        <div className="mt-16 animate-on-scroll">
-            <h3 className="text-2xl font-bold">Escolha Seu Pack e Comece HOJE:</h3>
-            <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center">
-                <Button asChild size="lg" variant="outline" className="h-auto py-3">
-                    <a href="#ofertas">
-                        <div>
-                            <p>PACK BÁSICO</p>
-                            <p className="font-bold text-xl">R$ 5,00</p>
-                        </div>
-                    </a>
-                </Button>
-                <Button asChild size="lg" className="h-auto py-3 bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                    <a href="#ofertas">
-                        <div>
-                            <p>PACK PREMIUM ⭐ RECOMENDADO</p>
-                            <p className="font-bold text-xl">R$ 27,00</p>
-                        </div>
-                    </a>
-                </Button>
-            </div>
-        </div>
+        
 
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-muted-foreground animate-on-scroll">
             <div className="flex flex-col items-center gap-2"><Lock className="h-6 w-6"/><span>Compra 100% Segura</span></div>
