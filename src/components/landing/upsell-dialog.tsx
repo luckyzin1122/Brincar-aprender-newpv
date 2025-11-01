@@ -42,7 +42,7 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
         <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2">
           <AlertDialogAction asChild>
             <a href="https://pay.wiapy.com/lWDNgt8Sv">
-              <Button size="lg" className="h-auto text-base w-full py-3 px-4 rounded-lg">
+              <Button size="lg" className="w-full text-base whitespace-normal h-auto py-3">
                 SIM, QUERO O PREMIUM POR R$ 12!
               </Button>
             </a>
@@ -51,7 +51,7 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
             <a href="https://pay.wiapy.com/sNgluDAio">
               <Button
                 variant="link"
-                className="text-muted-foreground h-auto text-center"
+                className="text-muted-foreground h-auto text-center whitespace-normal"
               >
                 Não, obrigado. Quero apenas o Básico por R$ 5.
               </Button>
