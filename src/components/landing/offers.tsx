@@ -65,6 +65,14 @@ export function OffersSection() {
                   <Check className="h-5 w-5 text-green-500" />
                   <span>Vídeos de Histórias Infantis</span>
                 </li>
+                 <li className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Garantia de 7 Dias</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Suporte via E-mail</span>
+                </li>
               </ul>
               <Button size="lg" className="w-full mt-6 text-lg h-14 bg-secondary hover:bg-secondary/90 text-secondary-foreground">
                 QUERO O PACK PREMIUM AGORA! →
@@ -97,6 +105,14 @@ export function OffersSection() {
                 <li className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-green-500" />
                   <span>+50 Atividades Pedagógicas</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Garantia de 7 Dias</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Suporte via E-mail</span>
                 </li>
               </ul>
               <Button variant="outline" className="w-full mt-6">Quero o Pack Básico</Button>
