@@ -48,14 +48,7 @@ export function ProblemSection() {
         </div>
         <div className="mt-16 text-center max-w-4xl mx-auto animate-on-scroll">
           <p className="text-lg text-muted-foreground text-balance">
-            Eu sei como é frustrante. Você não é um pai/mãe ruim. Você não está
-            falhando. A verdade é que vivemos em uma geração onde as TELAS foram
-            projetadas por engenheiros bilionários para viciar nossos filhos. É
-            uma batalha desigual.{' '}
-            <strong className="text-foreground">
-              Mas e se existisse uma forma simples, testada e aprovada de
-              reverter isso?
-            </strong>
+            Você não está falhando. As telas foram PROJETADAS para viciar. Mas e se você pudesse virar esse jogo a seu favor?
           </p>
         </div>
       </div>
