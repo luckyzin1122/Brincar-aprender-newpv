@@ -1,4 +1,3 @@
-
 'use client';
 
 import {
@@ -7,7 +6,6 @@ import {
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
-  AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
@@ -39,25 +37,18 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
             . É a sua chance!
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2">
-          <AlertDialogAction asChild>
-            <a href="https://pay.wiapy.com/lWDNgt8Sv">
-              <Button size="lg" className="w-full text-base whitespace-normal h-auto py-3">
+        <div className="flex flex-col gap-2 mt-4">
+            <Button asChild size="lg" className="w-full text-base whitespace-normal h-auto py-3 bg-primary text-primary-foreground hover:bg-primary/90">
+              <a href="https://pay.wiapy.com/lWDNgt8Sv">
                 SIM, QUERO O PREMIUM POR R$ 12!
-              </Button>
-            </a>
-          </AlertDialogAction>
-          <AlertDialogCancel asChild>
-            <a href="https://pay.wiapy.com/sNgluDAio">
-              <Button
-                variant="link"
-                className="text-muted-foreground h-auto text-center whitespace-normal"
-              >
+              </a>
+            </Button>
+            <Button asChild variant="link" className="text-muted-foreground h-auto text-center whitespace-normal">
+              <a href="https://pay.wiapy.com/sNgluDAio">
                 Não, obrigado. Quero apenas o Básico por R$ 5.
-              </Button>
-            </a>
-          </AlertDialogCancel>
-        </AlertDialogFooter>
+              </a>
+            </Button>
+        </div>
       </AlertDialogContent>
     </AlertDialog>
   );
