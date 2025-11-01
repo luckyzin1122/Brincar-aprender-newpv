@@ -116,14 +116,16 @@ const BonusCarousel = ({ imageIds }: { imageIds: string[] }) => {
           (image, index) =>
             image && (
               <CarouselItem key={index}>
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  width={400}
-                  height={300}
-                  className="rounded-md aspect-[4/3] object-cover"
-                />
+                <div className="aspect-[3/4] flex items-center justify-center">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    data-ai-hint={image.imageHint}
+                    width={300}
+                    height={400}
+                    className="rounded-md object-contain h-full w-auto"
+                  />
+                </div>
               </CarouselItem>
             )
         )}
