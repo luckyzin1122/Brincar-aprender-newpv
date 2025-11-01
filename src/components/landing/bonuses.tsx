@@ -36,6 +36,7 @@ const bonuses = [
       'bonus-coloring-7',
       'bonus-coloring-8',
     ],
+    fit: 'contain',
   },
   {
     icon: <Clapperboard className="h-8 w-8" />,
@@ -80,6 +81,7 @@ const bonuses = [
       'bonus-easter-11',
       'bonus-easter-12',
     ],
+    fit: 'contain',
   },
   {
     icon: <BookCopy className="h-8 w-8" />,
@@ -91,12 +93,22 @@ const bonuses = [
       'bonus-reading-6',
       'bonus-reading-7',
     ],
+    fit: 'contain',
   },
   {
     icon: <ClipboardList className="h-8 w-8" />,
     title: 'Planners para Professores - Diversos Temas',
     value: 59,
-    imageIds: ['bonus-planner-1', 'bonus-planner-2', 'bonus-planner-3'],
+    imageIds: [
+      'bonus-planner-4',
+      'bonus-planner-5',
+      'bonus-planner-6',
+      'bonus-planner-7',
+      'bonus-planner-8',
+      'bonus-planner-9',
+      'bonus-planner-10',
+    ],
+    fit: 'contain',
   },
   {
     icon: <Clapperboard className="h-8 w-8" />,
@@ -177,7 +189,10 @@ export function BonusesSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 items-start">
           {bonuses.map((bonus, index) => (
-            <Card key={index} className="text-center animate-on-scroll flex flex-col">
+            <Card
+              key={index}
+              className="text-center animate-on-scroll flex flex-col"
+            >
               <CardHeader className="items-center pb-2">
                 <div className="bg-primary/10 text-primary p-4 rounded-full">
                   {bonus.icon}
@@ -186,15 +201,15 @@ export function BonusesSection() {
                   BÔNUS #{index + 1}
                 </p>
               </CardHeader>
-              <CardContent className="pt-4 pb-6 flex flex-col flex-grow">
-                <CardTitle className="text-base font-bold mb-4 flex-grow">
+              <CardContent className="pt-4 pb-6">
+                <CardTitle className="text-base font-bold mb-4">
                   {bonus.title}
                 </CardTitle>
                 <BonusCarousel
                   imageIds={bonus.imageIds}
                   fit={(bonus as any).fit || 'cover'}
                 />
-                <div className="pt-4 mt-auto">
+                <div className="pt-4">
                   <Badge variant="secondary" className="mx-auto">
                     {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
                   </Badge>

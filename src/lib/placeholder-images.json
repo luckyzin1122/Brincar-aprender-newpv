@@ -187,78 +187,6 @@
       "imageHint": "themed coloring"
     },
     {
-      "id": "bonus-easter-1",
-      "description": "Example of an Easter activity",
-      "imageUrl": "https://i.ibb.co/dw6BL3wQ/1-1.png",
-      "imageHint": "easter activity"
-    },
-    {
-      "id": "bonus-easter-2",
-      "description": "Example of an Easter activity",
-      "imageUrl": "https://i.ibb.co/xtsfZ0DK/1-2.png",
-      "imageHint": "easter activity"
-    },
-    {
-      "id": "bonus-easter-3",
-      "description": "Example of an Easter activity",
-      "imageUrl": "https://i.ibb.co/v4CNxFjt/1.png",
-      "imageHint": "easter activity"
-    },
-    {
-      "id": "bonus-easter-4",
-      "description": "Example of an Easter activity",
-      "imageUrl": "https://i.ibb.co/Tx9GY0tH/2.png",
-      "imageHint": "easter activity"
-    },
-    {
-      "id": "bonus-easter-5",
-      "description": "Example of an Easter activity",
-      "imageUrl": "https://i.ibb.co/2YMfGnYJ/LIVRO-DE-COLORIR-1.png",
-      "imageHint": "easter activity"
-    },
-    {
-      "id": "bonus-easter-6",
-      "description": "Example of an Easter activity",
-      "imageUrl": "https://i.ibb.co/35jLDmqq/LIVRO-DE-COLORIR.png",
-      "imageHint": "easter activity"
-    },
-    {
-      "id": "bonus-reading-1",
-      "description": "Example of a reading activity",
-      "imageUrl": "https://images.unsplash.com/photo-1758272423676-21a8b4c5f0f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFkaW5nJTIwYWN0aXZpdHl8ZW58MHx8fHwxNzYyMDE5NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "reading activity"
-    },
-    {
-      "id": "bonus-reading-2",
-      "description": "Example of a reading activity",
-      "imageUrl": "https://images.unsplash.com/photo-1758272423676-21a8b4c5f0f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFkaW5nJTIwYWN0aXZpdHl8ZW58MHx8fHwxNzYyMDE5NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "reading activity"
-    },
-    {
-      "id": "bonus-reading-3",
-      "description": "Example of a reading activity",
-      "imageUrl": "https://images.unsplash.com/photo-1627007987162-32c5411dbd3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYWN0aXZpdHl8ZW58MHx8fHwxNzYyMDE5NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "reading activity"
-    },
-    {
-      "id": "bonus-planner-1",
-      "description": "Example of a teacher planner",
-      "imageUrl": "https://images.unsplash.com/photo-1636772523547-5577d04e8dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWFjaGVyJTIwcGxhbm5lcnxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teacher planner"
-    },
-    {
-      "id": "bonus-planner-2",
-      "description": "Example of a teacher planner",
-      "imageUrl": "https://images.unsplash.com/photo-1660351174962-e2a1fbb9af09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWFjaGVyJTIwcGxhbm5lcnxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teacher planner"
-    },
-    {
-      "id": "bonus-planner-3",
-      "description": "Example of a teacher planner",
-      "imageUrl": "https://images.unsplash.com/photo-1634219325274-53add2ddd28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFjaGVyJTIwcGxhbm5lcnxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teacher planner"
-    },
-    {
       "id": "bonus-easter-7",
       "description": "Example of an Easter activity",
       "imageUrl": "https://i.ibb.co/dw6BL3wQ/1-1.png",
@@ -317,6 +245,48 @@
       "description": "Example of a reading and interpretation activity",
       "imageUrl": "https://i.ibb.co/KjtDXCVz/Whats-App-Image-2025-06-10-at-18-54-29.jpg",
       "imageHint": "reading activity"
+    },
+    {
+      "id": "bonus-planner-4",
+      "description": "Teacher planner with astronaut theme",
+      "imageUrl": "https://i.ibb.co/Z7Dc38z/astronauta-link-do-modelo.png",
+      "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-planner-5",
+      "description": "Teacher planner with aviator theme",
+      "imageUrl": "https://i.ibb.co/B5vfbZyx/aviador-link-do-modelo.png",
+      "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-planner-6",
+      "description": "Teacher planner with Barbie theme",
+      "imageUrl": "https://i.ibb.co/Kc67NJBT/BARBIE-LINK-DO-MODELO.png",
+      "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-planner-7",
+      "description": "Teacher planner with Tsum Tsum theme",
+      "imageUrl": "https://i.ibb.co/4nBZgLWP/C-pia-de-C-pia-de-C-pia-de-PLANNER-TSUM-TSUM.png",
+      "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-planner-8",
+      "description": "Teacher planner with Stitch theme",
+      "imageUrl": "https://i.ibb.co/cX8trhxs/C-pia-de-PLANNER-2025-stich.png",
+      "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-planner-9",
+      "description": "Teacher planner with Inside Out theme",
+      "imageUrl": "https://i.ibb.co/gZg39rwN/divertidamente-link-do-modelo.png",
+      "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-planner-10",
+      "description": "Teacher planner with Encanto theme",
+      "imageUrl": "https://i.ibb.co/ds7gLLwF/encanto-link-do-modelo.png",
+      "imageHint": "teacher planner"
     }
   ]
 }
