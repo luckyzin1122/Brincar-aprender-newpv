@@ -140,20 +140,50 @@
     },
     {
       "id": "bonus-themed-1",
-      "description": "Example of a themed coloring book",
-      "imageUrl": "https://images.unsplash.com/photo-1662371360374-5a616a714155?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0aGVtZWQlMjBjb2xvcmluZ3xlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Themed coloring book: Little Red Riding Hood",
+      "imageUrl": "https://i.ibb.co/kszm6rgc/Livro-de-Colorir-Chapeuzinho-Vermelho.png",
       "imageHint": "themed coloring"
     },
     {
       "id": "bonus-themed-2",
-      "description": "Example of a themed coloring book",
-      "imageUrl": "https://images.unsplash.com/photo-1616014578457-c7f3cd043291?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGhlbWVkJTIwY29sb3Jpbmd8ZW58MHx8fHwxNzYyMDE5NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Themed coloring book: Circus",
+      "imageUrl": "https://i.ibb.co/FqLHHthd/Livro-de-Colorir-Circo.png",
       "imageHint": "themed coloring"
     },
     {
       "id": "bonus-themed-3",
-      "description": "Example of a themed coloring book",
-      "imageUrl": "https://images.unsplash.com/photo-1631061184412-b18f5fb1dc70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0aGVtZWQlMjBjb2xvcmluZ3xlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Themed coloring book: Dinosaurs",
+      "imageUrl": "https://i.ibb.co/7J1yyYBs/Livro-de-Colorir-Dinossauros.png",
+      "imageHint": "themed coloring"
+    },
+    {
+      "id": "bonus-themed-4",
+      "description": "Themed coloring book: Fruits",
+      "imageUrl": "https://i.ibb.co/j9N4x97V/Livro-de-Colorir-Frutas.png",
+      "imageHint": "themed coloring"
+    },
+    {
+      "id": "bonus-themed-5",
+      "description": "Themed coloring book: Cute Kittens",
+      "imageUrl": "https://i.ibb.co/Y4HFGGwc/Livro-de-Colorir-Gatinhos-Fofos.png",
+      "imageHint": "themed coloring"
+    },
+    {
+      "id": "bonus-themed-6",
+      "description": "Themed coloring book: Heroes",
+      "imageUrl": "https://i.ibb.co/PZJdRrPf/Livro-de-Colorir-Her-is.png",
+      "imageHint": "themed coloring"
+    },
+    {
+      "id": "bonus-themed-7",
+      "description": "Themed coloring book: Garden",
+      "imageUrl": "https://i.ibb.co/YzYCSMB/Livro-de-Colorir-Jardim.png",
+      "imageHint": "themed coloring"
+    },
+    {
+      "id": "bonus-themed-8",
+      "description": "Themed coloring book: Mickey and Minnie",
+      "imageUrl": "https://i.ibb.co/Ld2fPrmJ/Livro-de-Colorir-Mickey-e-Minnie.png",
       "imageHint": "themed coloring"
     },
     {
@@ -171,7 +201,7 @@
     {
       "id": "bonus-easter-3",
       "description": "Example of an Easter activity",
-      "imageUrl": "https://images.unsplash.com/photo-1650014868928-11a7b1be0e6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYXN0ZXIlMjBhY3Rpdml0eXxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650014868928-11a7b1be0e6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYXN0ZXIlMjBhY3Rpdml0eXxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "easter activity"
     },
     {

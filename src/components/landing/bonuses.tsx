@@ -12,7 +12,6 @@ import {
 import Autoplay from 'embla-carousel-autoplay';
 import {
   Palette,
-  PenLine,
   Paintbrush,
   BookCopy,
   ClipboardList,
@@ -56,7 +55,16 @@ const bonuses = [
     icon: <Paintbrush className="h-8 w-8" />,
     title: '+20 Cadernos de Colorir Temáticos',
     value: 39,
-    imageIds: ['bonus-themed-1', 'bonus-themed-2', 'bonus-themed-3'],
+    imageIds: [
+      'bonus-themed-1',
+      'bonus-themed-2',
+      'bonus-themed-3',
+      'bonus-themed-4',
+      'bonus-themed-5',
+      'bonus-themed-6',
+      'bonus-themed-7',
+      'bonus-themed-8',
+    ],
   },
   {
     icon: <RabbitIcon className="h-8 w-8" />,
