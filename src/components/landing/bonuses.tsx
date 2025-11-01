@@ -66,6 +66,7 @@ const bonuses = [
       'bonus-themed-7',
       'bonus-themed-8',
     ],
+    fit: 'contain',
   },
   {
     icon: <RabbitIcon className="h-8 w-8" />,
@@ -176,19 +177,15 @@ export function BonusesSection() {
                   BÔNUS #{index + 1}
                 </p>
               </CardHeader>
-              <CardContent className="pt-4 pb-6">
+              <CardContent className="pt-4 pb-6 flex-grow flex flex-col">
                 <CardTitle className="text-base font-bold mb-4">
                   {bonus.title}
                 </CardTitle>
                 <BonusCarousel
                   imageIds={bonus.imageIds}
-                  fit={
-                    index === 2
-                      ? 'contain'
-                      : 'cover'
-                  }
+                  fit={(bonus as any).fit || 'cover'}
                 />
-                <div className="pt-4">
+                <div className="pt-4 mt-auto">
                   <Badge variant="secondary" className="mx-auto">
                     {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
                   </Badge>
