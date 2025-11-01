@@ -1,7 +1,11 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { ScrollAnimation } from '@/components/scroll-animation';
+import { Header } from '@/components/landing/header';
+import { OffersSection } from '@/components/landing/offers';
+import { ScarcitySection } from '@/components/landing/scarcity';
 
 export const metadata: Metadata = {
   title: 'Brincar é Aprender | Tire seu filho das telas',
@@ -34,8 +38,14 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-body antialiased bg-background text-foreground">
+      <body
+        className="font-body antialiased bg-background text-foreground"
+        suppressHydrationWarning
+      >
+        <Header />
         {children}
+        <OffersSection />
+        <ScarcitySection />
         <Toaster />
         <ScrollAnimation />
       </body>
