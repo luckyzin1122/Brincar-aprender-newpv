@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+
 import { ShieldCheck } from 'lucide-react';
 
 export function GuaranteeSection() {
@@ -25,14 +25,6 @@ export function GuaranteeSection() {
               e devolvemos 100% do seu dinheiro. Sem perguntas. Sem burocracia.
               Sem enrolação. Justo, não é?
             </p>
-            <Button
-              asChild
-              size="lg"
-              variant="secondary"
-              className="h-12 text-lg"
-            >
-              <a href="#ofertas">QUERO COMEÇAR COM RISCO ZERO</a>
-            </Button>
           </div>
         </div>
       </div>
