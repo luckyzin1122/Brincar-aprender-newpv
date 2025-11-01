@@ -25,11 +25,11 @@ export function OffersSection() {
               <Badge className="mx-auto w-fit text-lg py-1 px-4">
                 ⭐ PACK PREMIUM
               </Badge>
-              <CardTitle className="text-6xl font-bold text-secondary-foreground pt-4">R$ 27,00</CardTitle>
+              <div className="mt-4 text-muted-foreground">
+                <span className="line-through">De R$ 351,00</span> por apenas:
+              </div>
+              <CardTitle className="text-6xl font-bold text-secondary-foreground pt-1">R$ 27,00</CardTitle>
               <p className="text-muted-foreground">ou 3x de R$ 9,67</p>
-              <p className="text-muted-foreground line-through mt-2">
-                de R$ 351,00
-              </p>
             </CardHeader>
             <CardContent className="flex flex-col flex-grow">
               <ul className="space-y-3 flex-grow">
