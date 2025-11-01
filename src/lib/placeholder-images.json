@@ -257,6 +257,66 @@
       "description": "Example of a teacher planner",
       "imageUrl": "https://images.unsplash.com/photo-1634219325274-53add2ddd28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFjaGVyJTIwcGxhbm5lcnxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-easter-7",
+      "description": "Example of an Easter activity",
+      "imageUrl": "https://i.ibb.co/dw6BL3wQ/1-1.png",
+      "imageHint": "easter activity"
+    },
+    {
+      "id": "bonus-easter-8",
+      "description": "Example of an Easter activity",
+      "imageUrl": "https://i.ibb.co/xtsfZ0DK/1-2.png",
+      "imageHint": "easter activity"
+    },
+    {
+      "id": "bonus-easter-9",
+      "description": "Example of an Easter activity",
+      "imageUrl": "https://i.ibb.co/v4CNxFjt/1.png",
+      "imageHint": "easter activity"
+    },
+    {
+      "id": "bonus-easter-10",
+      "description": "Example of an Easter activity",
+      "imageUrl": "https://i.ibb.co/Tx9GY0tH/2.png",
+      "imageHint": "easter activity"
+    },
+    {
+      "id": "bonus-easter-11",
+      "description": "Example of an Easter activity",
+      "imageUrl": "https://i.ibb.co/2YMfGnYJ/LIVRO-DE-COLORIR-1.png",
+      "imageHint": "easter activity"
+    },
+    {
+      "id": "bonus-easter-12",
+      "description": "Example of an Easter activity",
+      "imageUrl": "https://i.ibb.co/35jLDmqq/LIVRO-DE-COLORIR.png",
+      "imageHint": "easter activity"
+    },
+    {
+      "id": "bonus-reading-4",
+      "description": "Example of a reading and interpretation activity",
+      "imageUrl": "https://i.ibb.co/WpgnRMk9/Whats-App-Image-2025-06-10-at-18-54-28.jpg",
+      "imageHint": "reading activity"
+    },
+    {
+      "id": "bonus-reading-5",
+      "description": "Example of a reading and interpretation activity",
+      "imageUrl": "https://i.ibb.co/6RthLXf1/Whats-App-Image-2025-06-10-at-18-54-29-1.jpg",
+      "imageHint": "reading activity"
+    },
+    {
+      "id": "bonus-reading-6",
+      "description": "Example of a reading and interpretation activity",
+      "imageUrl": "https://i.ibb.co/bgFNTVKr/Whats-App-Image-2025-06-10-at-18-54-29-2.jpg",
+      "imageHint": "reading activity"
+    },
+    {
+      "id": "bonus-reading-7",
+      "description": "Example of a reading and interpretation activity",
+      "imageUrl": "https://i.ibb.co/KjtDXCVz/Whats-App-Image-2025-06-10-at-18-54-29.jpg",
+      "imageHint": "reading activity"
     }
   ]
 }
