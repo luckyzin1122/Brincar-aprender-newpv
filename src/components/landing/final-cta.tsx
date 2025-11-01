@@ -11,13 +11,6 @@ export function FinalCtaSection() {
           <h2 className="text-3xl md:text-5xl font-bold text-balance animate-on-scroll">
             Você Está a UM CLIQUE de Transformar a Rotina do Seu Filho
           </h2>
-          <div className="mt-8 flex justify-center">
-            <Button asChild size="lg" className="h-14 text-lg px-8">
-              <a href="#ofertas">
-                QUERO O PACK PREMIUM AGORA →
-              </a>
-            </Button>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12 animate-on-scroll">
