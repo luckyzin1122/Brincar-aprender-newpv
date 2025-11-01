@@ -24,8 +24,8 @@ export default function HomePage() {
         <TestimonialsSection />
         <OffersSection />
         <GuaranteeSection />
-        <FaqSection />
         <ScarcitySection />
+        <FaqSection />
         <FinalCtaSection />
       </main>
       <Footer />
