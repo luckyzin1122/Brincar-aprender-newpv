@@ -287,6 +287,36 @@
       "description": "Teacher planner with Encanto theme",
       "imageUrl": "https://i.ibb.co/ds7gLLwF/encanto-link-do-modelo.png",
       "imageHint": "teacher planner"
+    },
+    {
+      "id": "bonus-glove-story-1",
+      "description": "Example of a glove story activity",
+      "imageUrl": "https://i.ibb.co/zVY88qVd/1.jpg",
+      "imageHint": "glove story"
+    },
+    {
+      "id": "bonus-glove-story-2",
+      "description": "Example of a glove story activity",
+      "imageUrl": "https://i.ibb.co/s0sdyfY/2.jpg",
+      "imageHint": "glove story"
+    },
+    {
+      "id": "bonus-glove-story-3",
+      "description": "Example of a glove story activity",
+      "imageUrl": "https://i.ibb.co/qLcDXx0f/3.jpg",
+      "imageHint": "glove story"
+    },
+    {
+      "id": "bonus-glove-story-4",
+      "description": "Example of a glove story activity",
+      "imageUrl": "https://i.ibb.co/fdXNWNz8/4.jpg",
+      "imageHint": "glove story"
+    },
+    {
+      "id": "bonus-glove-story-5",
+      "description": "Example of a glove story activity",
+      "imageUrl": "https://i.ibb.co/sdbBZScD/5.jpg",
+      "imageHint": "glove story"
     }
   ]
 }

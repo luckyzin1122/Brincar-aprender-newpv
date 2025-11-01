@@ -117,7 +117,13 @@ const bonuses = [
     icon: <Hand className="h-8 w-8" />,
     title: 'Histórias na Luva',
     value: 27,
-    imageIds: ['bonus-videos-1', 'bonus-videos-2', 'bonus-videos-3'],
+    imageIds: [
+      'bonus-glove-story-1',
+      'bonus-glove-story-2',
+      'bonus-glove-story-3',
+      'bonus-glove-story-4',
+      'bonus-glove-story-5',
+    ],
     fit: 'cover',
   },
 ];
@@ -182,10 +188,7 @@ const BonusCarousel = ({
                       data-ai-hint={image.imageHint}
                       width={300}
                       height={300}
-                      className={cn('w-full h-auto', {
-                        'object-cover': fit === 'cover',
-                        'object-contain': fit === 'contain',
-                      })}
+                      className="w-full h-auto"
                       style={{
                         aspectRatio: '1 / 1',
                         objectFit: fit,
@@ -253,7 +256,7 @@ export function BonusesSection() {
                 </p>
               </CardHeader>
               <CardContent className="pt-4 flex flex-col flex-1">
-                <CardTitle className="text-base font-bold mb-4 flex-grow">
+                <CardTitle className="text-base font-bold mb-4">
                   {bonus.title}
                 </CardTitle>
                 <BonusCarousel imageIds={bonus.imageIds} fit={bonus.fit} />
