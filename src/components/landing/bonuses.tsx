@@ -102,7 +102,8 @@ export function BonusesSection() {
           </p>
           <p className="mt-4 text-2xl md:text-3xl font-bold text-foreground animate-on-scroll text-balance">
             Mas apenas hoje, dia {today}, você leva tudo por apenas{' '}
-            <span className="text-primary">R$ 27,00</span> com todos os bônus inclusos.
+            <span className="text-green-600 text-4xl md:text-5xl">R$ 27,00</span> com
+            todos os bônus inclusos.
           </p>
         </div>
       </div>
