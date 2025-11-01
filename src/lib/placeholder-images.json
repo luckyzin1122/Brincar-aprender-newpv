@@ -39,7 +39,7 @@
     {
       "id": "avatar-fernanda",
       "description": "Avatar for Fernanda Lima's testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE5MDk0MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE5MDk0MjV8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
@@ -91,22 +91,52 @@
       "imageHint": "coloring page"
     },
     {
-      "id": "bonus-calligraphy-1",
-      "description": "Example of a calligraphy sheet",
-      "imageUrl": "https://images.unsplash.com/photo-1758458708031-9bd0396329c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FsbGlncmFwaHklMjBzaGVldHxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "calligraphy sheet"
+      "id": "bonus-videos-1",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/ccNbNNg8/1.png",
+      "imageHint": "story video"
     },
     {
-      "id": "bonus-calligraphy-2",
-      "description": "Example of a calligraphy sheet",
-      "imageUrl": "https://images.unsplash.com/photo-1721491702251-f4744e4c0b2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYWxsaWdyYXBoeSUyMHNoZWV0fGVufDB8fHx8MTc2MjAxOTYyOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "calligraphy sheet"
+      "id": "bonus-videos-2",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/VYRHgxGf/2.png",
+      "imageHint": "story video"
     },
     {
-      "id": "bonus-calligraphy-3",
-      "description": "Example of a calligraphy sheet",
-      "imageUrl": "https://images.unsplash.com/photo-1758458708031-9bd0396329c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FsbGlncmFwaHklMjBzaGVldHxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "calligraphy sheet"
+      "id": "bonus-videos-3",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/rC8P89f/3.png",
+      "imageHint": "story video"
+    },
+    {
+      "id": "bonus-videos-4",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/N6bqYsKt/4.png",
+      "imageHint": "story video"
+    },
+    {
+      "id": "bonus-videos-5",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/zTYs635j/5.png",
+      "imageHint": "story video"
+    },
+    {
+      "id": "bonus-videos-6",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/SXq0pf3K/6.png",
+      "imageHint": "story video"
+    },
+    {
+      "id": "bonus-videos-7",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/Zz8mnM0m/7.png",
+      "imageHint": "story video"
+    },
+    {
+      "id": "bonus-videos-8",
+      "description": "Example of a kids story video",
+      "imageUrl": "https://i.ibb.co/JWLmnVfs/8.png",
+      "imageHint": "story video"
     },
     {
       "id": "bonus-themed-1",
@@ -141,7 +171,7 @@
     {
       "id": "bonus-easter-3",
       "description": "Example of an Easter activity",
-      "imageUrl": "https://images.unsplash.com/photo-1650014868928-11a7b1be0e6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYXN0ZXIlMjBhY3Rpdml0eXxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650014868928-11a7b1be0e6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlYXN0ZXIlMjBhY3Rpdml0eXxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "easter activity"
     },
     {
@@ -179,24 +209,6 @@
       "description": "Example of a teacher planner",
       "imageUrl": "https://images.unsplash.com/photo-1634219325274-53add2ddd28b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFjaGVyJTIwcGxhbm5lcnxlbnwwfHx8fDE3NjIwMTk2Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teacher planner"
-    },
-    {
-      "id": "bonus-videos-1",
-      "description": "Example of a kids story video",
-      "imageUrl": "https://images.unsplash.com/photo-1586016499740-fb13cc4e4b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9yeSUyMHZpZGVvfGVufDB8fHx8MTc2MjAxOTYyOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "story video"
-    },
-    {
-      "id": "bonus-videos-2",
-      "description": "Example of a kids story video",
-      "imageUrl": "https://images.unsplash.com/photo-1730890754876-1657029c9eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdG9yeSUyMHZpZGVvfGVufDB8fHx8MTc2MjAxOTYyOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "story video"
-    },
-    {
-      "id": "bonus-videos-3",
-      "description": "Example of a kids story video",
-      "imageUrl": "https://images.unsplash.com/photo-1586016499740-fb13cc4e4b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9yeSUyMHZpZGVvfGVufDB8fHx8MTc2MjAxOTYyOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "story video"
     }
   ]
 }

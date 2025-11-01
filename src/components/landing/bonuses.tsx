@@ -42,9 +42,14 @@ const bonuses = [
     title: '10 histórias infantis em vídeos',
     value: 29,
     imageIds: [
-      'bonus-calligraphy-1',
-      'bonus-calligraphy-2',
-      'bonus-calligraphy-3',
+      'bonus-videos-1',
+      'bonus-videos-2',
+      'bonus-videos-3',
+      'bonus-videos-4',
+      'bonus-videos-5',
+      'bonus-videos-6',
+      'bonus-videos-7',
+      'bonus-videos-8',
     ],
   },
   {
