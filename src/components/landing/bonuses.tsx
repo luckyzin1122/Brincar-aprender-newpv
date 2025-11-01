@@ -54,6 +54,7 @@ const bonuses = [
       'bonus-videos-7',
       'bonus-videos-8',
     ],
+    fit: 'cover',
   },
   {
     icon: <Paintbrush className="h-8 w-8" />,
@@ -117,6 +118,7 @@ const bonuses = [
     title: 'Histórias na Luva',
     value: 27,
     imageIds: ['bonus-videos-1', 'bonus-videos-2', 'bonus-videos-3'],
+    fit: 'cover',
   },
 ];
 
@@ -213,11 +215,17 @@ const BonusCarousel = ({
 };
 
 export function BonusesSection() {
-  const today = new Date().toLocaleDateString('pt-BR', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-  });
+  const [today, setToday] = useState('');
+
+  useEffect(() => {
+    setToday(
+      new Date().toLocaleDateString('pt-BR', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+      })
+    );
+  }, []);
 
   return (
     <section className="pt-16 sm:pt-24 pb-8 sm:pb-12 bg-background">
@@ -248,10 +256,7 @@ export function BonusesSection() {
                 <CardTitle className="text-base font-bold mb-4 flex-grow">
                   {bonus.title}
                 </CardTitle>
-                <BonusCarousel
-                  imageIds={bonus.imageIds}
-                  fit={(bonus as any).fit || 'cover'}
-                />
+                <BonusCarousel imageIds={bonus.imageIds} fit={bonus.fit} />
                 <div className="pt-4 mt-auto">
                   <Badge variant="secondary" className="mx-auto">
                     {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
@@ -270,7 +275,9 @@ export function BonusesSection() {
           </p>
           <p className="mt-4 text-2xl md:text-3xl font-bold text-foreground animate-on-scroll text-balance">
             Mas apenas hoje, dia {today}, você leva tudo por apenas{' '}
-            <span className="text-green-600 text-4xl md:text-5xl">R$ 27,00</span>{' '}
+            <span className="inline-block text-green-600 text-4xl md:text-5xl animate-pulse drop-shadow-lg">
+              R$ 27,00
+            </span>{' '}
             com todos os bônus inclusos.
           </p>
         </div>
