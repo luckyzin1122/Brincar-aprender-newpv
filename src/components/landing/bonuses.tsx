@@ -136,7 +136,7 @@ const BonusCarousel = ({
                     data-ai-hint={image.imageHint}
                     width={300}
                     height={400}
-                    className={`rounded-md object-${fit} h-full w-auto`}
+                    className={`rounded-md object-${fit} w-auto`}
                   />
                 </div>
               </CarouselItem>
