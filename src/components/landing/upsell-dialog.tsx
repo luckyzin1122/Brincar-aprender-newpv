@@ -42,7 +42,7 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
         <AlertDialogFooter className="flex-col sm:flex-col sm:space-x-0 gap-2">
           <AlertDialogAction asChild>
             <a href="https://pay.wiapy.com/lWDNgt8Sv">
-              <Button size="lg" className="h-auto text-base w-full py-3 px-4">
+              <Button size="lg" className="h-auto text-base w-full py-3 px-4 rounded-lg">
                 SIM, QUERO O PREMIUM POR R$ 12!
               </Button>
             </a>
