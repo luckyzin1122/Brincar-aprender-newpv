@@ -21,9 +21,9 @@ export default function HomePage() {
         <SolutionSection />
         <PackContentsSection />
         <BonusesSection />
+        <TestimonialsSection />
         <OffersSection />
         <GuaranteeSection />
-        <TestimonialsSection />
         <FaqSection />
         <ScarcitySection />
         <FinalCtaSection />
