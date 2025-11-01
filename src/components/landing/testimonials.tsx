@@ -1,6 +1,6 @@
 "use client"
 
-import * as React from 'react';
+import { useRef } from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -59,7 +59,7 @@ const StarRating = () => (
 )
 
 export function TestimonialsSection() {
-    const plugin = React.useRef(
+    const plugin = useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
   return (
