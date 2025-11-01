@@ -51,6 +51,12 @@ const bonuses = [
 const totalValue = bonuses.reduce((sum, bonus) => sum + bonus.value, 97); // 97 from main pack
 
 export function BonusesSection() {
+  const today = new Date().toLocaleDateString('pt-BR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
+
   return (
     <section className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -93,6 +99,10 @@ export function BonusesSection() {
           </p>
           <p className="text-5xl md:text-7xl font-bold text-destructive line-through mt-2">
             R$ {totalValue.toFixed(2).replace('.', ',')}
+          </p>
+          <p className="mt-4 text-2xl md:text-3xl font-bold text-foreground animate-on-scroll text-balance">
+            Mas apenas hoje, dia {today}, você leva tudo por apenas{' '}
+            <span className="text-primary">R$ 27,00</span> com todos os bônus inclusos.
           </p>
         </div>
       </div>
