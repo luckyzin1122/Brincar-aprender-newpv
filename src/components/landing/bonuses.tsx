@@ -104,7 +104,7 @@ const BonusCarousel = ({ imageIds }: { imageIds: string[] }) => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full mt-4"
+      className="w-full"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
       opts={{
@@ -123,7 +123,7 @@ const BonusCarousel = ({ imageIds }: { imageIds: string[] }) => {
                     alt={image.description}
                     data-ai-hint={image.imageHint}
                     width={300}
-                    height={400}
+                    height={300}
                     className="w-full h-auto"
                   />
                 </div>
@@ -167,8 +167,8 @@ export function BonusesSection() {
                   BÔNUS #{index + 1}
                 </p>
               </CardHeader>
-              <CardContent className="flex-grow flex flex-col justify-between pt-4">
-                <CardTitle className="text-base font-bold">
+              <CardContent className="pt-4">
+                <CardTitle className="text-base font-bold mb-4">
                   {bonus.title}
                 </CardTitle>
                 <BonusCarousel imageIds={bonus.imageIds} />
