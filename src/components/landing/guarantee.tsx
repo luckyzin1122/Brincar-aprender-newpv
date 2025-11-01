@@ -1,0 +1,41 @@
+import { Button } from '@/components/ui/button';
+import { ShieldCheck } from 'lucide-react';
+
+export function GuaranteeSection() {
+  return (
+    <section
+      id="garantia"
+      className="py-16 sm:py-24 bg-primary text-primary-foreground"
+    >
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div className="md:col-span-1 flex justify-center animate-on-scroll">
+            <ShieldCheck className="h-40 w-40" />
+          </div>
+          <div className="md:col-span-2 animate-on-scroll">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
+              Nossa Garantia Blindada de 7 Dias
+            </h2>
+            <p className="text-lg opacity-90 mb-6 text-balance">
+              Sabemos que você pode estar pensando: 'Será que meu filho vai
+              gostar? Será que vai funcionar?' Por isso, assumimos TODO o risco
+              por você. Funciona assim: Você adquire o 'Brincar é Aprender'
+              hoje. Testa com seu filho por 7 dias completos. Se por QUALQUER
+              motivo você achar que não valeu cada centavo, é só enviar um email
+              e devolvemos 100% do seu dinheiro. Sem perguntas. Sem burocracia.
+              Sem enrolação. Justo, não é?
+            </p>
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="h-12 text-lg"
+            >
+              <a href="#ofertas">QUERO COMEÇAR COM RISCO ZERO</a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
