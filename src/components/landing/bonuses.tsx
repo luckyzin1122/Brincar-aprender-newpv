@@ -155,10 +155,7 @@ export function BonusesSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {bonuses.map((bonus, index) => (
-            <Card
-              key={index}
-              className="text-center animate-on-scroll flex flex-col"
-            >
+            <Card key={index} className="text-center animate-on-scroll">
               <CardHeader className="items-center pb-2">
                 <div className="bg-primary/10 text-primary p-4 rounded-full">
                   {bonus.icon}
@@ -167,7 +164,7 @@ export function BonusesSection() {
                   BÔNUS #{index + 1}
                 </p>
               </CardHeader>
-              <CardContent className="pt-4">
+              <CardContent className="pt-4 pb-6">
                 <CardTitle className="text-base font-bold mb-4">
                   {bonus.title}
                 </CardTitle>
