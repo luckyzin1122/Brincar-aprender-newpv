@@ -11,7 +11,7 @@ export function HeroSection() {
           nas telas
         </div>
         <h1 className="animate-on-scroll text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-          Tire Seu Filho das Telas em 7 Dias
+          Cansado de Ver Seu Filho Grudado na Tela?
         </h1>
         <p className="animate-on-scroll mx-auto mt-6 max-w-3xl text-lg text-muted-foreground text-balance">
           Descubra como +50 atividades pedagógicas comprovadas podem tirar seu
