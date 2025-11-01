@@ -132,8 +132,8 @@ const BonusCarousel = ({
               <CarouselItem key={index}>
                 <div
                   className={cn(
-                    'flex items-center justify-center',
-                    fit === 'cover' ? 'aspect-[3/4]' : 'h-auto'
+                    'overflow-hidden rounded-md',
+                    fit === 'cover' ? 'aspect-[3/4]' : ''
                   )}
                 >
                   <Image
@@ -142,7 +142,7 @@ const BonusCarousel = ({
                     data-ai-hint={image.imageHint}
                     width={300}
                     height={400}
-                    className={`rounded-md object-${fit} w-auto`}
+                    className={cn('w-full h-full object-contain', fit === 'cover' && 'object-cover')}
                   />
                 </div>
               </CarouselItem>
