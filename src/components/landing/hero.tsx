@@ -6,10 +6,6 @@ export function HeroSection() {
   return (
     <section id="inicio" className="relative w-full py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 text-center">
-        <div className="animate-on-scroll mb-4 text-sm font-semibold uppercase tracking-wider text-primary">
-          ⚠️ Para pais e professores que estão CANSADOS de ver crianças grudadas
-          nas telas
-        </div>
         <h1 className="animate-on-scroll text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-balance">
           Cansado de Ver Seu Filho Grudado na Tela?
         </h1>
