@@ -27,7 +27,7 @@ export function OffersSection() {
                   ⭐ PACK PREMIUM
                 </Badge>
                 <div className="mt-4 text-muted-foreground">
-                  <span className="line-through">De R$ 351,00</span> por apenas:
+                  De <span className="line-through">R$ 351,00</span> por apenas:
                 </div>
                 <CardTitle className="text-6xl font-bold text-secondary-foreground pt-1">
                   R$ 27,00
@@ -78,10 +78,13 @@ export function OffersSection() {
                   </li>
                 </ul>
                 <Button
+                  asChild
                   size="lg"
                   className="w-full mt-6 text-lg h-14 bg-secondary hover:bg-secondary/90 text-secondary-foreground"
                 >
-                  QUERO O PACK PREMIUM AGORA! →
+                  <a href="https://pay.wiapy.com/UvrpLEURvl">
+                    QUERO O PACK PREMIUM AGORA! →
+                  </a>
                 </Button>
                 <div className="flex justify-around text-center mt-4 text-sm">
                   <div className="flex items-center gap-1 font-semibold text-green-600">
