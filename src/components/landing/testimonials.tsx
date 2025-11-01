@@ -1,8 +1,17 @@
+"use client"
+
+import * as React from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 const testimonials = [
   {
@@ -50,6 +59,9 @@ const StarRating = () => (
 )
 
 export function TestimonialsSection() {
+    const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true })
+  );
   return (
     <section id="depoimentos" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -58,41 +70,56 @@ export function TestimonialsSection() {
             Veja o Que Pais e Professores Estão Dizendo:
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => {
-            const avatarImage = PlaceHolderImages.find(
-              (img) => img.id === testimonial.avatarId
-            );
-            return (
-              <Card key={index} className="animate-on-scroll shadow-lg flex flex-col">
-                <CardContent className="pt-6 flex-grow flex flex-col">
-                  <div className="flex items-center mb-4">
-                    <Avatar>
-                      {avatarImage && (
-                        <AvatarImage
-                          src={avatarImage.imageUrl}
-                          alt={`Avatar de ${testimonial.name}`}
-                          data-ai-hint={avatarImage.imageHint}
-                        />
-                      )}
-                      <AvatarFallback>
-                        {testimonial.name.charAt(0)}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div className="ml-4">
-                      <p className="font-bold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                    </div>
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-full animate-on-scroll"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => {
+              const avatarImage = PlaceHolderImages.find(
+                (img) => img.id === testimonial.avatarId
+              );
+              return (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="shadow-lg flex flex-col h-full">
+                      <CardContent className="pt-6 flex-grow flex flex-col">
+                        <div className="flex items-center mb-4">
+                          <Avatar>
+                            {avatarImage && (
+                              <AvatarImage
+                                src={avatarImage.imageUrl}
+                                alt={`Avatar de ${testimonial.name}`}
+                                data-ai-hint={avatarImage.imageHint}
+                              />
+                            )}
+                            <AvatarFallback>
+                              {testimonial.name.charAt(0)}
+                            </AvatarFallback>
+                          </Avatar>
+                          <div className="ml-4">
+                            <p className="font-bold">{testimonial.name}</p>
+                            <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                          </div>
+                        </div>
+                        <StarRating />
+                        <p className="text-muted-foreground mt-4 flex-grow">
+                          "{testimonial.text}"
+                        </p>
+                      </CardContent>
+                    </Card>
                   </div>
-                   <StarRating />
-                  <p className="text-muted-foreground mt-4 flex-grow">
-                    "{testimonial.text}"
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+        </Carousel>
         <div className="mt-16 text-center animate-on-scroll">
              <p className="text-lg text-muted-foreground">Esses são apenas alguns dos centenas de relatos que recebemos todos os dias. <strong className="text-foreground">A pergunta é: seu filho vai ser o próximo a se beneficiar?</strong></p>
         </div>
