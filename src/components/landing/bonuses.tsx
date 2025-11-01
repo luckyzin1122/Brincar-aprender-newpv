@@ -124,7 +124,7 @@ const bonuses = [
       'bonus-glove-story-4',
       'bonus-glove-story-5',
     ],
-    fit: 'cover',
+    fit: 'contain',
   },
 ];
 
@@ -256,7 +256,7 @@ export function BonusesSection() {
                 </p>
               </CardHeader>
               <CardContent className="pt-4 flex flex-col flex-1">
-                <CardTitle className="text-base font-bold mb-4">
+                <CardTitle className="text-base font-bold mb-4 flex-grow">
                   {bonus.title}
                 </CardTitle>
                 <BonusCarousel imageIds={bonus.imageIds} fit={bonus.fit} />
