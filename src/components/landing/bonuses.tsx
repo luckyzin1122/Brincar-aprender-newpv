@@ -36,7 +36,6 @@ const bonuses = [
       'bonus-coloring-7',
       'bonus-coloring-8',
     ],
-    fit: 'cover',
   },
   {
     icon: <Clapperboard className="h-8 w-8" />,
@@ -52,7 +51,6 @@ const bonuses = [
       'bonus-videos-7',
       'bonus-videos-8',
     ],
-    fit: 'cover',
   },
   {
     icon: <Paintbrush className="h-8 w-8" />,
@@ -68,47 +66,36 @@ const bonuses = [
       'bonus-themed-7',
       'bonus-themed-8',
     ],
-    fit: 'contain',
   },
   {
     icon: <RabbitIcon className="h-8 w-8" />,
     title: 'Mini Combo Páscoa',
     value: 19,
     imageIds: ['bonus-easter-1', 'bonus-easter-2', 'bonus-easter-3'],
-    fit: 'cover',
   },
   {
     icon: <BookCopy className="h-8 w-8" />,
     title: 'Caderno de Leitura e Interpretação',
     value: 34,
     imageIds: ['bonus-reading-1', 'bonus-reading-2', 'bonus-reading-3'],
-    fit: 'cover',
   },
   {
     icon: <ClipboardList className="h-8 w-8" />,
     title: 'Planners para Professores - Diversos Temas',
     value: 59,
     imageIds: ['bonus-planner-1', 'bonus-planner-2', 'bonus-planner-3'],
-    fit: 'cover',
   },
   {
     icon: <Clapperboard className="h-8 w-8" />,
     title: 'Vídeos de Histórias Infantis',
     value: 27,
     imageIds: ['bonus-videos-1', 'bonus-videos-2', 'bonus-videos-3'],
-    fit: 'cover',
   },
 ];
 
 const totalValue = bonuses.reduce((sum, bonus) => sum + bonus.value, 97); // 97 from main pack
 
-const BonusCarousel = ({
-  imageIds,
-  fit,
-}: {
-  imageIds: string[];
-  fit: 'cover' | 'contain';
-}) => {
+const BonusCarousel = ({ imageIds }: { imageIds: string[] }) => {
   const plugin = useRef(Autoplay({ delay: 3500, stopOnInteraction: true }));
   const images = imageIds
     .map((id) => PlaceHolderImages.find((img) => img.id === id))
@@ -130,19 +117,14 @@ const BonusCarousel = ({
           (image, index) =>
             image && (
               <CarouselItem key={index}>
-                <div
-                  className={cn(
-                    'overflow-hidden rounded-md',
-                    fit === 'cover' ? 'aspect-[3/4]' : ''
-                  )}
-                >
+                <div className="overflow-hidden rounded-md">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
                     data-ai-hint={image.imageHint}
                     width={300}
                     height={400}
-                    className={cn('w-full h-full object-contain', fit === 'cover' && 'object-cover')}
+                    className="w-full h-auto"
                   />
                 </div>
               </CarouselItem>
@@ -189,7 +171,7 @@ export function BonusesSection() {
                 <CardTitle className="text-base font-bold">
                   {bonus.title}
                 </CardTitle>
-                <BonusCarousel imageIds={bonus.imageIds} fit={bonus.fit} />
+                <BonusCarousel imageIds={bonus.imageIds} />
                 <Badge variant="secondary" className="mt-4 mx-auto">
                   {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
                 </Badge>
