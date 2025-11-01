@@ -66,7 +66,6 @@ const bonuses = [
       'bonus-themed-7',
       'bonus-themed-8',
     ],
-    carouselFit: 'contain',
   },
   {
     icon: <RabbitIcon className="h-8 w-8" />,
@@ -165,7 +164,10 @@ export function BonusesSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 items-start">
           {bonuses.map((bonus, index) => (
-            <Card key={index} className="text-center animate-on-scroll">
+            <Card
+              key={index}
+              className="text-center animate-on-scroll flex flex-col"
+            >
               <CardHeader className="items-center pb-2">
                 <div className="bg-primary/10 text-primary p-4 rounded-full">
                   {bonus.icon}
@@ -181,7 +183,7 @@ export function BonusesSection() {
                 <BonusCarousel
                   imageIds={bonus.imageIds}
                   fit={
-                    (bonus as any).carouselFit === 'contain'
+                    index === 2
                       ? 'contain'
                       : 'cover'
                   }
