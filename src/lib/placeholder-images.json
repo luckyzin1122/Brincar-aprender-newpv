@@ -45,19 +45,49 @@
     {
       "id": "bonus-coloring-1",
       "description": "Example of a coloring book page",
-      "imageUrl": "https://images.unsplash.com/photo-1761034036989-24640be78e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvcmluZyUyMHBhZ2V8ZW58MHx8fHwxNzYxOTM2Njk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/ynmK6yhx/01.jpg",
       "imageHint": "coloring page"
     },
     {
       "id": "bonus-coloring-2",
       "description": "Example of a coloring book page",
-      "imageUrl": "https://images.unsplash.com/photo-1761034036962-22e04edc8b22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2xvcmluZyUyMHBhZ2V8ZW58MHx8fHwxNzYxOTM2Njk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/LDwMtGB8/02-2.jpg",
       "imageHint": "coloring page"
     },
     {
       "id": "bonus-coloring-3",
       "description": "Example of a coloring book page",
-      "imageUrl": "https://images.unsplash.com/photo-1727812100173-b33044cd3071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2xvcmluZyUyMHBhZ2V8ZW58MHx8fHwxNzYxOTM2Njk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/N2GVGmsD/CAPA-COM-SANGRIA-3.png",
+      "imageHint": "coloring page"
+    },
+    {
+      "id": "bonus-coloring-4",
+      "description": "Example of a coloring book page",
+      "imageUrl": "https://i.ibb.co/YFF3pj0x/CAPA-COM-SANGRIA-4.png",
+      "imageHint": "coloring page"
+    },
+    {
+      "id": "bonus-coloring-5",
+      "description": "Example of a coloring book page",
+      "imageUrl": "https://i.ibb.co/FkmdVPSX/CAPA-COM-SANGRIA-6.png",
+      "imageHint": "coloring page"
+    },
+    {
+      "id": "bonus-coloring-6",
+      "description": "Example of a coloring book page",
+      "imageUrl": "https://i.ibb.co/xKn8G0tP/CAPA-COM-SANGRIA-7.png",
+      "imageHint": "coloring page"
+    },
+    {
+      "id": "bonus-coloring-7",
+      "description": "Example of a coloring book page",
+      "imageUrl": "https://i.ibb.co/bMTs1WN2/CAPA-COM-SANGRIA-9.png",
+      "imageHint": "coloring page"
+    },
+    {
+      "id": "bonus-coloring-8",
+      "description": "Example of a coloring book page",
+      "imageUrl": "https://i.ibb.co/xt3yMHRQ/CAPA-COM-SANGRIA-14.png",
       "imageHint": "coloring page"
     },
     {

@@ -27,7 +27,16 @@ const bonuses = [
     icon: <Palette className="h-8 w-8" />,
     title: '30 Cadernos de Colorir Estilo Boobie Goods',
     value: 47,
-    imageIds: ['bonus-coloring-1', 'bonus-coloring-2', 'bonus-coloring-3'],
+    imageIds: [
+      'bonus-coloring-1',
+      'bonus-coloring-2',
+      'bonus-coloring-3',
+      'bonus-coloring-4',
+      'bonus-coloring-5',
+      'bonus-coloring-6',
+      'bonus-coloring-7',
+      'bonus-coloring-8',
+    ],
   },
   {
     icon: <PenLine className="h-8 w-8" />,
