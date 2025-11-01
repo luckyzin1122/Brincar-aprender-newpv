@@ -165,10 +165,7 @@ export function BonusesSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 items-start">
           {bonuses.map((bonus, index) => (
-            <Card
-              key={index}
-              className="text-center animate-on-scroll flex flex-col"
-            >
+            <Card key={index} className="text-center animate-on-scroll">
               <CardHeader className="items-center pb-2">
                 <div className="bg-primary/10 text-primary p-4 rounded-full">
                   {bonus.icon}
@@ -177,45 +174,24 @@ export function BonusesSection() {
                   BÔNUS #{index + 1}
                 </p>
               </CardHeader>
-              {index === 1 ? (
-                <CardContent className="pt-4 pb-6">
-                  <CardTitle className="text-base font-bold mb-4">
-                    {bonus.title}
-                  </CardTitle>
-                  <BonusCarousel
-                    imageIds={bonus.imageIds}
-                    fit={
-                      (bonus as any).carouselFit === 'contain'
-                        ? 'contain'
-                        : 'cover'
-                    }
-                  />
-                  <div className="pt-4">
-                    <Badge variant="secondary" className="mx-auto">
-                      {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
-                    </Badge>
-                  </div>
-                </CardContent>
-              ) : (
-                <CardContent className="pt-4 pb-6 flex-grow flex flex-col">
-                  <CardTitle className="text-base font-bold mb-4 flex-grow">
-                    {bonus.title}
-                  </CardTitle>
-                  <BonusCarousel
-                    imageIds={bonus.imageIds}
-                    fit={
-                      (bonus as any).carouselFit === 'contain'
-                        ? 'contain'
-                        : 'cover'
-                    }
-                  />
-                  <div className="pt-4 mt-auto">
-                    <Badge variant="secondary" className="mx-auto">
-                      {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
-                    </Badge>
-                  </div>
-                </CardContent>
-              )}
+              <CardContent className="pt-4 pb-6">
+                <CardTitle className="text-base font-bold mb-4">
+                  {bonus.title}
+                </CardTitle>
+                <BonusCarousel
+                  imageIds={bonus.imageIds}
+                  fit={
+                    (bonus as any).carouselFit === 'contain'
+                      ? 'contain'
+                      : 'cover'
+                  }
+                />
+                <div className="pt-4">
+                  <Badge variant="secondary" className="mx-auto">
+                    {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
+                  </Badge>
+                </div>
+              </CardContent>
             </Card>
           ))}
         </div>
