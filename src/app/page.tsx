@@ -1,4 +1,4 @@
-import { Header } from '@/components/landing/header';
+
 import { HeroSection } from '@/components/landing/hero';
 import { ProblemSection } from '@/components/landing/problem';
 import { SolutionSection } from '@/components/landing/solution';
@@ -15,7 +15,6 @@ import { Footer } from '@/components/landing/footer';
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
       <main className="flex-grow">
         <HeroSection />
         <ProblemSection />
