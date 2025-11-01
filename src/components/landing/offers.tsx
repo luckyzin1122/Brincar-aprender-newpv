@@ -43,7 +43,7 @@ export function OffersSection() {
                 </li>
                 <li className="flex items-center gap-3 font-bold text-primary">
                   <Check className="h-5 w-5 text-green-500" />
-                  <span>Cadernos de Caligrafia</span>
+                  <span>10 histórias infantis em vídeo</span>
                 </li>
                 <li className="flex items-center gap-3 font-bold text-primary">
                   <Check className="h-5 w-5 text-green-500" />
