@@ -80,7 +80,7 @@ export function OffersSection() {
                 <Button
                   asChild
                   size="lg"
-                  className="w-full mt-6 text-lg h-14 bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+                  className="w-full mt-6 text-lg h-auto py-3 px-4 bg-secondary hover:bg-secondary/90 text-secondary-foreground"
                 >
                   <a href="https://pay.wiapy.com/UvrpLEURvl">
                     QUERO O PACK PREMIUM AGORA! →
@@ -126,7 +126,7 @@ export function OffersSection() {
                 </li>
               </ul>
               <UpsellDialog>
-                <Button variant="outline" className="w-full mt-6">
+                <Button variant="outline" className="w-full mt-6 h-auto py-2">
                   Quero o Pack Básico
                 </Button>
               </UpsellDialog>

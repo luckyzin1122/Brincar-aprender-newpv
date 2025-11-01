@@ -15,8 +15,8 @@ export function HeroSection() {
           que você não seja professor(a)
         </p>
         <div className="animate-on-scroll mt-8 flex flex-col items-center justify-center gap-4">
-          <Button asChild size="lg" className="h-12 text-lg px-8">
-            <a href="#ofertas">
+          <Button asChild size="lg" className="h-auto text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4">
+            <a href="#ofertas" className='text-center'>
               QUERO TIRAR MEU FILHO DAS TELAS AGORA →
             </a>
           </Button>
