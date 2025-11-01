@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -13,29 +14,6 @@ export function OffersSection() {
           </h2>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start">
-          {/* Basic Pack */}
-          <Card className="animate-on-scroll shadow-lg flex flex-col h-full">
-            <CardHeader className="text-center">
-              <Badge variant="secondary" className="mx-auto w-fit text-lg py-1 px-4">
-                🎒 PACK BÁSICO
-              </Badge>
-              <CardTitle className="text-4xl font-bold pt-4">R$ 5,00</CardTitle>
-              <p className="text-muted-foreground line-through">
-                de R$ 97,00
-              </p>
-            </CardHeader>
-            <CardContent className="flex flex-col flex-grow">
-              <ul className="space-y-3 flex-grow">
-                <li className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-green-500" />
-                  <span>+50 Atividades Pedagógicas</span>
-                </li>
-              </ul>
-              <Button variant="outline" className="w-full mt-6">Quero o Pack Básico</Button>
-              <p className="text-center text-sm text-destructive mt-4 font-semibold">⚠️ Sem os bônus exclusivos</p>
-            </CardContent>
-          </Card>
-
           {/* Premium Pack */}
           <div className="relative animate-on-scroll">
              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 text-base bg-secondary text-secondary-foreground hover:bg-secondary">
@@ -61,7 +39,31 @@ export function OffersSection() {
                 </li>
                 <li className="flex items-center gap-3 font-bold text-primary">
                   <Check className="h-5 w-5 text-green-500" />
-                  <span>TODOS OS 7 BÔNUS EXCLUSIVOS</span>
+                  <span>30 Cadernos de Colorir Estilo Boobie Goods</span>
+                </li>
+                <li className="flex items-center gap-3 font-bold text-primary">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Cadernos de Caligrafia</span>
+                </li>
+                <li className="flex items-center gap-3 font-bold text-primary">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>+20 Cadernos de Colorir Temáticos</span>
+                </li>
+                <li className="flex items-center gap-3 font-bold text-primary">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Mini Combo Páscoa</span>
+                </li>
+                <li className="flex items-center gap-3 font-bold text-primary">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Caderno de Leitura e Interpretação</span>
+                </li>
+                <li className="flex items-center gap-3 font-bold text-primary">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Planners para Professores</span>
+                </li>
+                <li className="flex items-center gap-3 font-bold text-primary">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>Vídeos de Histórias Infantis</span>
                 </li>
               </ul>
               <Button size="lg" className="w-full mt-6 text-lg h-14 bg-secondary hover:bg-secondary/90 text-secondary-foreground">
@@ -78,6 +80,29 @@ export function OffersSection() {
             </CardContent>
           </Card>
           </div>
+
+          {/* Basic Pack */}
+          <Card className="animate-on-scroll shadow-lg flex flex-col h-full">
+            <CardHeader className="text-center">
+              <Badge variant="secondary" className="mx-auto w-fit text-lg py-1 px-4">
+                🎒 PACK BÁSICO
+              </Badge>
+              <CardTitle className="text-4xl font-bold pt-4">R$ 5,00</CardTitle>
+              <p className="text-muted-foreground line-through">
+                de R$ 97,00
+              </p>
+            </CardHeader>
+            <CardContent className="flex flex-col flex-grow">
+              <ul className="space-y-3 flex-grow">
+                <li className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-green-500" />
+                  <span>+50 Atividades Pedagógicas</span>
+                </li>
+              </ul>
+              <Button variant="outline" className="w-full mt-6">Quero o Pack Básico</Button>
+              <p className="text-center text-sm text-destructive mt-4 font-semibold">⚠️ Sem os bônus exclusivos</p>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="mt-12 text-center max-w-3xl mx-auto p-6 bg-card rounded-lg shadow-md animate-on-scroll">
