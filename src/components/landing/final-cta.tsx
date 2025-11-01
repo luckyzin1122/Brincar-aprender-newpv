@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { XCircle, CheckCircle, Lock, Forward, ShieldCheck, Infinity } from 'lucide-react';
@@ -10,14 +11,13 @@ export function FinalCtaSection() {
           <h2 className="text-3xl md:text-5xl font-bold text-balance animate-on-scroll">
             Você Está a UM CLIQUE de Transformar a Rotina do Seu Filho
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground text-balance animate-on-scroll">
-            Imagine acordar amanhã e, em vez de ouvir 'quero o celular', você
-            ouve 'vamos fazer aquelas atividades legais?'. Imagine ver seu filho
-            DESENVOLVENDO habilidades reais, aprendendo, criando, se divertindo
-            - sem aquela culpa que aperta o peito toda vez que você cede à
-            telinha. Isso não é fantasia. É exatamente o que acontece quando
-            você toma a decisão certa HOJE.
-          </p>
+          <div className="mt-8 flex justify-center">
+            <Button asChild size="lg" className="h-14 text-lg px-8">
+              <a href="#ofertas">
+                QUERO O PACK PREMIUM AGORA →
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12 animate-on-scroll">
