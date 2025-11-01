@@ -178,7 +178,7 @@ export function BonusesSection() {
                 </p>
               </CardHeader>
               {index === 1 ? (
-                <CardContent className="pt-4 pb-6">
+                <CardContent className="pt-4 pb-2">
                   <CardTitle className="text-base font-bold mb-4">
                     {bonus.title}
                   </CardTitle>
