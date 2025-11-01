@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useRef } from 'react';
@@ -39,8 +38,8 @@ const bonuses = [
     ],
   },
   {
-    icon: <PenLine className="h-8 w-8" />,
-    title: 'Cadernos de Caligrafia',
+    icon: <Clapperboard className="h-8 w-8" />,
+    title: '10 histórias infantis em vídeos',
     value: 29,
     imageIds: [
       'bonus-calligraphy-1',
