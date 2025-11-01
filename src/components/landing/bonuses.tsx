@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { RabbitIcon } from './icons';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { cn } from '@/lib/utils';
 
 const bonuses = [
   {
@@ -129,7 +130,12 @@ const BonusCarousel = ({
           (image, index) =>
             image && (
               <CarouselItem key={index}>
-                <div className="aspect-[3/4] flex items-center justify-center">
+                <div
+                  className={cn(
+                    'flex items-center justify-center',
+                    fit === 'cover' ? 'aspect-[3/4]' : 'h-auto'
+                  )}
+                >
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
@@ -183,7 +189,7 @@ export function BonusesSection() {
                 <CardTitle className="text-base font-bold">
                   {bonus.title}
                 </CardTitle>
-                <BonusCarousel imageIds={bonus.imageIds} fit={bonus.fit as 'cover' | 'contain'} />
+                <BonusCarousel imageIds={bonus.imageIds} fit={bonus.fit} />
                 <Badge variant="secondary" className="mt-4 mx-auto">
                   {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
                 </Badge>
