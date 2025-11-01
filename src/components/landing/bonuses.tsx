@@ -178,7 +178,7 @@ export function BonusesSection() {
                 </p>
               </CardHeader>
               {index === 1 ? (
-                <CardContent className="pt-4 pb-6 flex flex-col">
+                <CardContent className="pt-4 pb-6">
                   <CardTitle className="text-base font-bold mb-4">
                     {bonus.title}
                   </CardTitle>
@@ -197,8 +197,8 @@ export function BonusesSection() {
                   </div>
                 </CardContent>
               ) : (
-                <CardContent className="pt-4 flex-grow flex flex-col">
-                  <CardTitle className="text-base font-bold mb-4 flex-grow">
+                <CardContent className="pt-4 pb-6">
+                  <CardTitle className="text-base font-bold mb-4">
                     {bonus.title}
                   </CardTitle>
                   <BonusCarousel
@@ -209,7 +209,7 @@ export function BonusesSection() {
                         : 'cover'
                     }
                   />
-                  <div className="mt-auto pt-4">
+                  <div className="pt-4">
                     <Badge variant="secondary" className="mx-auto">
                       {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
                     </Badge>
