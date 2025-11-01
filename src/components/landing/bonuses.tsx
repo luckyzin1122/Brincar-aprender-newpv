@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -8,6 +8,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import {
@@ -132,40 +133,77 @@ const BonusCarousel = ({
     .map((id) => PlaceHolderImages.find((img) => img.id === id))
     .filter(Boolean);
 
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCurrent(api.selectedScrollSnap());
+
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+
+    api.on('select', onSelect);
+
+    return () => {
+      api.off('select', onSelect);
+    };
+  }, [api]);
+
   return (
-    <Carousel
-      plugins={[plugin.current]}
-      className="w-full"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-      opts={{
-        align: 'start',
-        loop: true,
-      }}
-    >
-      <CarouselContent>
-        {images.map(
-          (image, index) =>
-            image && (
-              <CarouselItem key={index}>
-                <div className="overflow-hidden rounded-md">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    data-ai-hint={image.imageHint}
-                    width={300}
-                    height={300}
-                    className={cn('w-full h-auto', {
-                      'object-cover': fit === 'cover',
-                      'object-contain': fit === 'contain',
-                    })}
-                  />
-                </div>
-              </CarouselItem>
-            )
-        )}
-      </CarouselContent>
-    </Carousel>
+    <div>
+      <Carousel
+        setApi={setApi}
+        plugins={[plugin.current]}
+        className="w-full"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+        opts={{
+          align: 'start',
+          loop: true,
+        }}
+      >
+        <CarouselContent>
+          {images.map(
+            (image, index) =>
+              image && (
+                <CarouselItem key={index}>
+                  <div className="overflow-hidden rounded-md">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      data-ai-hint={image.imageHint}
+                      width={300}
+                      height={300}
+                      className={cn('w-full h-auto', {
+                        'object-cover': fit === 'cover',
+                        'object-contain': fit === 'contain',
+                      })}
+                    />
+                  </div>
+                </CarouselItem>
+              )
+          )}
+        </CarouselContent>
+      </Carousel>
+      <div className="py-2 flex justify-center gap-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => api?.scrollTo(index)}
+            className={cn(
+              'h-2 w-2 rounded-full transition-colors',
+              current === index ? 'bg-primary' : 'bg-muted'
+            )}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 
@@ -201,15 +239,15 @@ export function BonusesSection() {
                   BÔNUS #{index + 1}
                 </p>
               </CardHeader>
-              <CardContent className="pt-4 pb-6">
-                <CardTitle className="text-base font-bold mb-4">
+              <CardContent className="pt-4 flex flex-col flex-1">
+                <CardTitle className="text-base font-bold mb-4 flex-grow">
                   {bonus.title}
                 </CardTitle>
                 <BonusCarousel
                   imageIds={bonus.imageIds}
                   fit={(bonus as any).fit || 'cover'}
                 />
-                <div className="pt-4">
+                <div className="pt-4 mt-auto">
                   <Badge variant="secondary" className="mx-auto">
                     {`Valor: R$ ${bonus.value.toFixed(2).replace('.', ',')}`}
                   </Badge>
