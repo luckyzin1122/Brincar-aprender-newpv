@@ -1,7 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Target, Paintbrush, BookOpenCheck } from 'lucide-react';
+import { Target, Paintbrush, BookOpenCheck, PlayCircle } from 'lucide-react';
 
 const pillars = [
   {
@@ -22,10 +24,6 @@ const pillars = [
 ];
 
 export function SolutionSection() {
-  const productImage = PlaceHolderImages.find(
-    (img) => img.id === 'product-mockup'
-  );
-
   return (
     <section id="beneficios" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -42,20 +40,28 @@ export function SolutionSection() {
         </div>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
           <div className="lg:col-span-3 animate-on-scroll">
-            {productImage && (
-              <Image
-                src={productImage.imageUrl}
-                alt={productImage.description}
-                data-ai-hint={productImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-2xl mx-auto"
-              />
-            )}
+            <h3 className="text-center text-xl md:text-2xl font-bold mb-4 flex items-center justify-center gap-2">
+              <PlayCircle className="h-8 w-8 text-primary" />
+              Veja em vídeo um exemplo das atividades super divertidas que você
+              receberá!
+            </h3>
+            <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-2xl">
+              <iframe
+                src="https://player.vimeo.com/video/972843192?badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                className="w-full h-full"
+                title="Exemplo atividades"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <div className="lg:col-span-2 flex flex-col gap-6">
             {pillars.map((pillar, index) => (
-              <div key={index} className="flex items-start gap-4 animate-on-scroll">
+              <div
+                key={index}
+                className="flex items-start gap-4 animate-on-scroll"
+              >
                 <div className="flex-shrink-0 bg-primary/10 text-primary p-3 rounded-full">
                   {pillar.icon}
                 </div>
