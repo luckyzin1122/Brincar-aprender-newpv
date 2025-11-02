@@ -47,7 +47,7 @@ export function SolutionSection() {
             </h3>
             <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-2xl">
               <iframe
-                src="https://player.vimeo.com/video/972843192?badge=0&autopause=0&player_id=0&app_id=58479"
+                src="https://player.vimeo.com/video/1132843192?badge=0&autopause=0&player_id=0&app_id=58479"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 className="w-full h-full"
