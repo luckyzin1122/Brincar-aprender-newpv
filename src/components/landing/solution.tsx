@@ -77,3 +77,5 @@ export function SolutionSection() {
     </section>
   );
 }
+
+// Forçando a detecção de mudança para o Git.
