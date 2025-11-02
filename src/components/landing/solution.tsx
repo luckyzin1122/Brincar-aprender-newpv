@@ -45,7 +45,7 @@ export function SolutionSection() {
               Veja em vídeo um exemplo das atividades super divertidas que você
               receberá!
             </h3>
-            <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-2xl">
+            <div className="aspect-video overflow-hidden rounded-lg shadow-2xl">
               <iframe
                 src="https://player.vimeo.com/video/1132843192?badge=0&autopause=0&player_id=0&app_id=58479"
                 frameBorder="0"
