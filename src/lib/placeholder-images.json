@@ -317,6 +317,60 @@
       "description": "Example of a glove story activity",
       "imageUrl": "https://i.ibb.co/sdbBZScD/5.jpg",
       "imageHint": "glove story"
+    },
+    {
+      "id": "hero-carousel-1",
+      "description": "Child playing with educational toy",
+      "imageUrl": "https://i.ibb.co/WvDm2p47/carrosel-pv-1.jpg",
+      "imageHint": "child learning"
+    },
+    {
+      "id": "hero-carousel-2",
+      "description": "Child drawing and coloring",
+      "imageUrl": "https://i.ibb.co/Tqp3VYFf/carrosel-pv-2.jpg",
+      "imageHint": "child drawing"
+    },
+    {
+      "id": "hero-carousel-3",
+      "description": "Mother and child reading a book together",
+      "imageUrl": "https://i.ibb.co/LD8CJCvQ/carrosel-pv-3.jpg",
+      "imageHint": "family reading"
+    },
+    {
+      "id": "hero-carousel-4",
+      "description": "Kids playing with blocks",
+      "imageUrl": "https://i.ibb.co/ymLV7VGJ/carrosel-pv-4.jpg",
+      "imageHint": "kids playing"
+    },
+    {
+      "id": "hero-carousel-5",
+      "description": "Child doing a puzzle",
+      "imageUrl": "https://i.ibb.co/Hp72ZXyY/carrosel-pv-5.jpg",
+      "imageHint": "child puzzle"
+    },
+    {
+      "id": "hero-carousel-6",
+      "description": "Children playing outdoors",
+      "imageUrl": "https://i.ibb.co/HDfnjQcG/carrosel-pv-6.jpg",
+      "imageHint": "children outdoors"
+    },
+    {
+      "id": "hero-carousel-7",
+      "description": "Father and son doing a science experiment",
+      "imageUrl": "https://i.ibb.co/27Qp1NpK/carrosel-pv-7.jpg",
+      "imageHint": "family science"
+    },
+    {
+      "id": "hero-carousel-8",
+      "description": "Child playing with clay",
+      "imageUrl": "https://i.ibb.co/LW02sxH/carrosel-pv-8.jpg",
+      "imageHint": "child clay"
+    },
+    {
+      "id": "hero-carousel-9",
+      "description": "Children on a playground",
+      "imageUrl": "https://i.ibb.co/0Rk5F3By/carrosel-pv-9.jpg",
+      "imageHint": "children playground"
     }
   ]
 }
