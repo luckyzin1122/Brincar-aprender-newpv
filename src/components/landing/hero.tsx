@@ -69,8 +69,8 @@ export function HeroSection() {
 
         <div className="max-w-4xl mx-auto mt-8 animate-on-scroll">
           <Badge
-            variant="secondary"
-            className="mb-4 text-sm font-semibold animate-on-scroll"
+            variant="default"
+            className="mb-4 text-sm font-bold animate-on-scroll shadow-lg"
           >
             exemplo das atividades que você vai receber
           </Badge>
@@ -129,7 +129,7 @@ export function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="h-auto text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4"
+            className="h-auto text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 whitespace-normal"
           >
             <a href="#ofertas" className="text-center">
               QUERO TIRAR MEU FILHO DAS TELAS AGORA →
