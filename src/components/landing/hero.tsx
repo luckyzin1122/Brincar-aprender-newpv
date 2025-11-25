@@ -20,8 +20,8 @@ export function HeroSection() {
         <div className="animate-on-scroll mt-12 max-w-4xl mx-auto">
           <div className="overflow-hidden rounded-lg shadow-xl border-2 border-primary w-full max-w-2xl mx-auto md:aspect-video aspect-[9/16]">
             <iframe
-              src="https://www.youtube.com/embed/m1ThGIp2Gns"
-              title="YouTube video player"
+              src="https://www.youtube.com/embed/_5DCW7I2Xbc"
+              title="Brincar é aprender"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
