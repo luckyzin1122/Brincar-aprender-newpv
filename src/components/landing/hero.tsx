@@ -17,6 +17,20 @@ export function HeroSection() {
           que você não seja professor(a)
         </p>
 
+        <div className="animate-on-scroll mt-12 max-w-4xl mx-auto">
+          <div className="overflow-hidden rounded-lg shadow-xl border-2 border-primary w-full max-w-2xl mx-auto md:aspect-video aspect-[9/16]">
+            <iframe
+              src="https://www.youtube.com/embed/m1ThGIp2Gns"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+
         <div className="animate-on-scroll mt-12 flex flex-col items-center justify-center gap-4">
           <Button
             asChild
