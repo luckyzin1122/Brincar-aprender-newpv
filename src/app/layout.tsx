@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        {/* Force git detection */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -36,6 +37,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <Script
+          id="utmify-script"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           strategy="afterInteractive"
           data-utmify-prevent-xcod-sck
