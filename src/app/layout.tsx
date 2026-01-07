@@ -25,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        {/* Force git detection */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -43,6 +42,19 @@ export default function RootLayout({
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
         />
+        <script
+          id="utmify-pixel-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pixelId = "695ec2227be1954758c3b6a8";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              document.head.appendChild(a);
+            `,
+          }}
+        ></script>
       </head>
       <body
         className="font-body antialiased bg-background text-foreground"
