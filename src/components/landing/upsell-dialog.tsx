@@ -1,3 +1,4 @@
+
 'use client';
 
 import {
@@ -39,12 +40,12 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
         </AlertDialogHeader>
         <div className="flex flex-col gap-2 mt-4">
             <Button asChild size="lg" className="w-full text-base whitespace-normal h-auto py-3 bg-primary text-primary-foreground hover:bg-primary/90">
-              <a href="https://pay.wiapy.com/lWDNgt8Sv">
+              <a href="https://pay.lowify.com.br/checkout?product_id=tjkEUi">
                 SIM, QUERO O PREMIUM POR R$ 17!
               </a>
             </Button>
             <Button asChild variant="link" className="text-muted-foreground h-auto text-center whitespace-normal">
-              <a href="https://pay.wiapy.com/sNgluDAio">
+              <a href="https://pay.lowify.com.br/checkout?product_id=3rVWXe">
                 Não, obrigado. Quero apenas o Básico por R$ 10.
               </a>
             </Button>

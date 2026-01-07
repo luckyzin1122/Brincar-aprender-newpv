@@ -82,7 +82,7 @@ export function OffersSection() {
                   size="lg"
                   className="w-full mt-6 text-lg h-auto py-3 px-4 bg-secondary hover:bg-secondary/90 text-secondary-foreground"
                 >
-                  <a href="https://pay.wiapy.com/UvrpLEURvl">
+                  <a href="https://pay.lowify.com.br/checkout?product_id=mSEcO0">
                     QUERO O PACK PREMIUM AGORA! →
                   </a>
                 </Button>
