@@ -67,3 +67,4 @@ export default function RootLayout({
     </html>
   );
 }
+// Forçando o update do Git
