@@ -32,7 +32,7 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
             você leva o <strong className="text-primary">Pack Premium</strong>{' '}
             completo (que vale R$ 351,00) por um total de apenas{' '}
             <strong className="text-green-600 font-bold text-lg">
-              R$ 12,00
+              R$ 17,00
             </strong>
             . É a sua chance!
           </AlertDialogDescription>
@@ -40,12 +40,12 @@ export function UpsellDialog({ children }: { children: React.ReactNode }) {
         <div className="flex flex-col gap-2 mt-4">
             <Button asChild size="lg" className="w-full text-base whitespace-normal h-auto py-3 bg-primary text-primary-foreground hover:bg-primary/90">
               <a href="https://pay.wiapy.com/lWDNgt8Sv">
-                SIM, QUERO O PREMIUM POR R$ 12!
+                SIM, QUERO O PREMIUM POR R$ 17!
               </a>
             </Button>
             <Button asChild variant="link" className="text-muted-foreground h-auto text-center whitespace-normal">
               <a href="https://pay.wiapy.com/sNgluDAio">
-                Não, obrigado. Quero apenas o Básico por R$ 5.
+                Não, obrigado. Quero apenas o Básico por R$ 10.
               </a>
             </Button>
         </div>
