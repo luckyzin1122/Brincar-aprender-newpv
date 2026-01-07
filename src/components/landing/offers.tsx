@@ -107,7 +107,7 @@ export function OffersSection() {
               >
                 🎒 PACK BÁSICO
               </Badge>
-              <CardTitle className="text-4xl font-bold pt-4">R$ 5,00</CardTitle>
+              <CardTitle className="text-4xl font-bold pt-4">R$ 10,00</CardTitle>
               <p className="text-muted-foreground line-through">de R$ 97,00</p>
             </CardHeader>
             <CardContent className="flex flex-col flex-grow">
