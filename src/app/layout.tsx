@@ -41,16 +41,19 @@ export default function RootLayout({
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
         />
-        <Script id="utmify-pixel" strategy="afterInteractive">
-          {`
-            window.pixelId = "695ec2227be1954758c3b6a8";
-            var a = document.createElement("script");
-            a.setAttribute("async", "");
-            a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-            document.head.appendChild(a);
-          `}
-        </Script>
+        <script
+          id="utmify-pixel"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.pixelId = "695ec2227be1954758c3b6a8";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              document.head.appendChild(a);
+            `,
+          }}
+        />
       </head>
       <body
         className="font-body antialiased bg-background text-foreground"
